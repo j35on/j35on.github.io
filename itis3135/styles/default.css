@@ -1,0 +1,14 @@
+img{
+    max-width: 300px;
+    height: auto;
+    
+}
+figure{
+    font-display:inherit;
+    display: contents;
+    justify-content: left;
+}
+
+figcaption{
+    text-align:start;
+}
