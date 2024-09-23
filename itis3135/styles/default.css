@@ -12,3 +12,18 @@ figure{
 figcaption{
     text-align:start;
 }
+
+body{
+    background-color: rgb(63, 6, 68);
+    color: rgb(165, 160, 161);
+    font-family: Tahoma;
+    text-align: center;
+
+}
+header, main, footer{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
