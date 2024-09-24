@@ -10,7 +10,7 @@ figure{
 }
 
 figcaption{
-    text-align:start;
+    text-align:center;
 }
 
 body{
@@ -26,4 +26,10 @@ header, main, footer{
     margin: 0 auto;
     text-align: center;
 
+}
+ul{
+    text-align: left;
+}
+li{
+    text-align: left;
 }
