@@ -45,3 +45,7 @@ a{
 a:hover{
     color: #294D4A;
 }
+strong>a, li>a{
+    text-decoration: underline;
+    color: #D4D6B9;
+}
