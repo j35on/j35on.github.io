@@ -30,3 +30,15 @@ header, main, footer{
 ul,li{
     text-align: left;
 }
+
+body{
+    background-color: #32213A;
+	color: #D4D6B9;
+	font-family: Tahoma;
+				
+}
+a{
+    text-decoration: none;
+    color:#EF959C;
+    
+}
