@@ -27,9 +27,6 @@ header, main, footer{
     text-align: center;
 
 }
-ul{
-    text-align: left;
-}
-li{
+ul,li{
     text-align: left;
 }
