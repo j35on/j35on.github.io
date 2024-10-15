@@ -49,11 +49,14 @@ strong>a, li>a{
     text-decoration: underline;
     color: #D4D6B9;
 }
-h3 > a{
+h3 > a, nav > a{
     padding: 10px;
     border-radius: 5px;
     border-style:solid;
     cursor: pointer;
+    margin-right: 5px; /* Added margin to ensure borders don't clip */
+    display: inline-block; /* Ensures the padding and borders behave correctly */
+    margin-bottom: 5px;
 }
 
 
