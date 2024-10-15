@@ -49,3 +49,12 @@ strong>a, li>a{
     text-decoration: underline;
     color: #D4D6B9;
 }
+h3 > a{
+    padding: 10px;
+    border-radius: 5px;
+    border-style:solid;
+    cursor: pointer;
+}
+
+
+/* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
