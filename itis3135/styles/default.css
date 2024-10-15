@@ -1,3 +1,10 @@
+:root{
+    --background-color: #32213A;
+    --text-color: #D4D6B9;
+    --link-color: #EF959C;
+    --hover-color: #294D4A;
+}
+
 img{
     max-width: 300px;
     height: auto;
@@ -13,13 +20,6 @@ figcaption{
     text-align:center;
 }
 
-body{
-    background-color: rgb(63, 6, 68);
-    color: rgb(165, 160, 161);
-    font-family: Tahoma;
-    text-align: center;
-
-}
 header, main, footer{
     width: 95%;
     max-width: 1200px;
@@ -32,22 +32,22 @@ ul,li{
 }
 
 body{
-    background-color: #32213A;
-	color: #D4D6B9;
+    background-color: var(--background-color);
+	color: var(--text-color);
 	font-family: Tahoma;
-				
+	text-align: center;			
 }
 a{
     text-decoration: none;
-    color:#EF959C;
+    color:var(--link-color);
     
 }
 a:hover{
-    color: #294D4A;
+    color: var(--hover-color);
 }
 strong>a, li>a{
     text-decoration: underline;
-    color: #D4D6B9;
+    color: var(--text-color);
 }
 h3 > a, header > nav > a{
     padding: 10px;
@@ -58,6 +58,38 @@ h3 > a, header > nav > a{
     display: inline-block; /* Ensures the padding and borders behave correctly */
     margin-bottom: 5px;
 }
+ol{
+    padding-left:30%;
+    justify-content: center;
+    text-align: center;
+}
+ol > li{
+    padding-top: 10px;
+}
 
+table{
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    margin:5px;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: left;
+    padding:2px;
+    border:1px solid
+}
 
+tr > th{
+    justify-content: center;
+    text-align: center;
+}
+
+section > table tr:nth-child(1) {
+    background-color: var(--hover-color);
+}
+
+section > table tr:nth-child(n+3):nth-child(odd){
+    background-color: #5A3C68;
+}
 /* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
