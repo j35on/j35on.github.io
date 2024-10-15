@@ -49,7 +49,7 @@ strong>a, li>a{
     text-decoration: underline;
     color: #D4D6B9;
 }
-h3 > a, nav > a{
+h3 > a, header > nav > a{
     padding: 10px;
     border-radius: 5px;
     border-style:solid;
