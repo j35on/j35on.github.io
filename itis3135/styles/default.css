@@ -27,6 +27,7 @@ header, main, footer{
     text-align: center;
 
 }
+
 ul,li{
     text-align: left;
 }
@@ -108,5 +109,26 @@ input{
     width: 200px;
 }
 
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body{
+        font-size: medium;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    body{
+        font-family: Roboto;
+        font-size: small;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    body{
+        font-family: Roboto;
+        font-size: smaller;
+    }
+}
 
 /* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
