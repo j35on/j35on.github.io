@@ -69,9 +69,8 @@ ol > li{
 
 table{
     border: 1px solid;
-    width: 100%;
     padding: 5px;
-    margin:5px;
+    margin:5px auto;
     border-collapse: collapse;
 }
 th,td{
@@ -92,4 +91,22 @@ section > table tr:nth-child(1) {
 section > table tr:nth-child(n+3):nth-child(odd){
     background-color: #5A3C68;
 }
+
+form{
+    text-align: center;
+    margin: 20px auto;
+}
+label{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+input{
+    margin: 5px;
+}
+
+#form-name,#form-email,#form-phone{
+    width: 200px;
+}
+
+
 /* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
