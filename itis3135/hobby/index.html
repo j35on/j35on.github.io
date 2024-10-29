@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Jason's Hobby</title>
+        <style>
+            body{
+                background-color: #D5AC4E;
+                color :#8B6220;
+
+            }
+            a{
+                color: #720E07;
+                text-decoration: none;
+            }
+            a:hover{
+            color: #EECF6D;
+            text-decoration: underline;
+            }
+            h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                justify-content: center;
+                text-align: center;
+                font-size: 30px; 
+            }
+            h2{
+                font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                font-size: 25px; 
+            }
+            nav{
+                justify-content: center;
+                text-align: center;
+
+            }
+            footer{
+                text-align: center;
+                
+            }
+            nav > a{
+                border: #45050C solid;
+                border-radius: 5px; 
+                margin: 5px;
+                margin-bottom: 10px;
+                padding: 5px; 
+                display: inline-block;
+                font-size: 18px;
+                font-family:Cochin, Georgia;
+            }
+            footer > section {
+                padding-top: 20px;
+            }
+            figure{
+                justify-content: center;
+                text-align: center;
+                font-size: 18px; 
+                font-family: Cochin, Georgia;
+            }
+            figure > img{
+                width:300px;
+            }
+            p{
+                text-align: center;
+                font-family:Cochin, Georgia
+            }
+            ul{
+                justify-content: center;
+                display: table;
+                margin-left:45%;  
+
+            }
+            table tr:nth-child(odd){
+            background-color: #e69a28;
+            }
+            table{
+                
+                text-align: center; 
+                border: 1px solid;
+                padding: 5px;
+                margin:5px auto;
+                border-collapse: collapse;
+            }
+            th,td{
+                text-align: center;
+                padding:2px;
+                border:1px solid
+            }
+            form{
+            text-align: center;
+            margin: 20px auto;
+            }
+            label{
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+            input{
+                margin: 5px;
+            }
+
+            #form-name,#form-email,#form-phone{
+                width: 200px;
+            }
+            section{
+                display:none;
+            }
+            #ai > ul{
+                margin-left: 0%
+            }
+        </style>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Guitar as a Hobby</h1>
+                <a href = "#what" onclick="showSection('what')">Home</a>
+                ||
+                <a href = "#who" onclick="showSection('who')">About</a>
+                ||
+                <a href = "#when" onclick="showSection('when')">History of Guitar</a>
+                ||
+                <a href = "#where" onclick="showSection('where')">Where to Buy</a>
+                ||
+                <a href = "#how" onclick="showSection('how')">How to Play</a>
+                ||
+                <a href="#why" onclick="showSection('why')">Why Guitar</a>
+                ||
+                <a href="#ai" onclick="showSection('ai')">Ai Prompts</a>
+                
+            </nav>
+        </header>
+        <section id = "what">
+            <h2>Home</h2>
+            <figure>
+                <img src = "images/album.JPG" alt = "Jason in the lounge">
+                <figcaption><em>Me playing in the lounge</em></figcaption>
+            </figure>
+            <p>Welcome to my guitar website! Please click along to find out more about guitars.</p>
+            <p>Guitar is a fun instrument to play!</p>
+        </section>
+        <section id = "who">
+            <h2>About</h2>
+            <figure>
+                <img src = "images/stock2.jpg">
+                <figcaption>Electric Guitar</figcaption>
+            </figure>
+            <p>The guitar is a stringed instrument, typically with 6 or 12 strings, that is played by strumming or plucking with the players hands.</p>
+            <p>Different types of guitars include:</p>
+            <ul>
+                <li>Classical</li>
+                <li>Acoustic</li>
+                <li>Electric</li>
+                <li>Bass</li>
+            </ul>
+            <p>They are all fun to play!</p>
+        </section>
+        <section id="when">
+            <h2>History of Guitar</h2>
+            <figure>
+                <img src="images/stockguitar.jpg" href ="Guitar standing up next to a plant">
+                <figcaption><em>Classical guitar</em></figcaption>
+            </figure>
+            <p>The guitar is thought to have been invented in Spain in the 12th century, although the original invention is lost to time.<br>
+            Click <a href = "https://historycooperative.org/who-invented-the-guitar/">here</a> to find out more.</p>
+        </section>
+        <section id ="where">
+            <h2>Where to Buy</h2>
+            <figure>
+                <img src="images/GuitarCenterAura.jpg" alt="Me testing out guitars in guitar center">
+                <figcaption><em>Testing out Guitars in Guitar Center</em></figcaption>
+            </figure>
+            <p>Check out these places if you are interested in purchasing a guitar</p>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Access</th>
+                </tr>
+                <tr>
+                    <td><a href = "https://www.guitarcenter.com/">Guitar Center</a></td>
+                    <td>In-Person & Online</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.ebay.com/">ebay</a></td>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/marketplace/">Facebook Marketplace</a></td>
+                    <td>Online</td>
+                </tr>
+            </table>
+        </section>
+        <section id = "how">
+            <h2>How to play</h2>
+            <figure>
+                <img src="images/Lounge Aura.JPG" alt="Me in the lounge yet again">
+                <figcaption><em>I'm running out of pictures</em></figcaption>
+            </figure>
+            <p>Just watch this youtube video I can't teach you.</p>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ug_DfEQI0H8?si=63MaYPKoXhO2lULj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </section>
+        <section id ="why">
+            <h2>Why Guitar</h2>
+            <figure>
+                <img src="images/stache lounge.jpg" alt="Jason in the bonus room">
+                <figcaption><em>Once more playing guitar</em></figcaption>
+            </figure>
+            <p>If you want to know why you should learn guitar then contact me.</p>
+            <form>
+                <label for ="name">Name: </label>
+                <input id ="name" type = "text" name = "name" placeholder="Hawk tuah!!">
+                <label for = "email">Email: </label>
+                <input id ="email" type="email" name="email" placeholder ="hawk@tuah.thang"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit"> 
+            </form>
+        </section>
+        <section id = "ai">
+            <h2>Ai Prompts</h2>
+            <p>I gave chat gpt two prompts for this page,</p>
+            <ul>
+                <li>"can you create a script in html that will only show one section of a webpage at a time depending on which section is selected"</li>
+                <li>"my sections dont have classes just ids"</li>
+            </ul>
+            <p >All images either came from <a href="https://unsplash.com/s/photos/guitar">here</a> or belong to me.</p>
+        </section>
+        <footer>
+            <nav>
+                <a href = "../index.html">Home page</a> | 
+                <a href = "https://github.com/j35on" target="_new">GitHub.com</a> | 
+                <a href = "https://j35on.github.io" target="_new"> Github.io</a> |
+                <a href="https://www.linkedin.com/in/jason-gianni/">LinkedIn</a> |
+                <a href = "https://j35on.github.io/itis3135/">itis3135.io</a> |
+                <a href="https://www.freecodecamp.org/j35">FreeCodeCamp</a> |
+                <a href ="https://www.codecademy.com/profiles/j35on">Codecademy</a>
+        
+            </nav>
+            <section>
+            Designed by <a href="jgdesigns.co/">JG Designs</a> &copy; 2024, Certified in <em><a href = "https://www.freecodecamp.org/certification/j35/responsive-web-design">Responsive Web Design</a>.</em>
+            </section>
+            <section>
+            <a href="https://validator.w3.org/check?uri=referer" id = "validation-link-html">
+                <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+            </a>
+            
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation-link-css">
+                <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+            </a>
+            </section>
+            <script>
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
+            <script> //generated by chatgpt
+                // Function to show a specific section and hide others
+                function showSection(sectionId) {
+                    // Hide all sections by targeting each ID directly
+                    document.getElementById('what').style.display = 'none';
+                    document.getElementById('who').style.display = 'none';
+                    document.getElementById('when').style.display = 'none';
+                    document.getElementById('where').style.display = 'none';
+                    document.getElementById('how').style.display = 'none';
+                    document.getElementById('why').style.display = 'none';
+                    document.getElementById('ai').style.display = 'none';
+                    
+                    // Show the selected section
+                    document.getElementById(sectionId).style.display = 'block';
+                }
+        
+                // Show the first section by default
+                showSection('what');
+                //chargpt generation ends here
+            </script>
+        
+        </footer>
+    </body>
+</html>
+
+<!-- https://coolors.co/210124-750d37-b3dec1-dbf9f0-f7f9f7 9A879D-->
