@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
         <meta charset="utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -114,23 +114,23 @@
         <header>
             <nav>
                 <h1>Guitar as a Hobby</h1>
-                <a href = "#what" onclick="showSection('what')">Home</a>
+                <a href = "#what">Home</a>
                 ||
-                <a href = "#who" onclick="showSection('who')">About</a>
+                <a href = "#who">About</a>
                 ||
-                <a href = "#when" onclick="showSection('when')">History of Guitar</a>
+                <a href = "#when">History of Guitar</a>
                 ||
-                <a href = "#where" onclick="showSection('where')">Where to Buy</a>
+                <a href = "#where">Where to Buy</a>
                 ||
-                <a href = "#how" onclick="showSection('how')">How to Play</a>
+                <a href = "#how">How to Play</a>
                 ||
-                <a href="#why" onclick="showSection('why')">Why Guitar</a>
+                <a href="#why">Why Guitar</a>
                 ||
-                <a href="#ai" onclick="showSection('ai')">Ai Prompts</a>
+                <a href="#ai">Ai Prompts</a>
                 
             </nav>
         </header>
-        <section id = "what">
+        <section id = "what" class="what">
             <h2>Home</h2>
             <figure>
                 <img src = "images/album.JPG" alt = "Jason in the lounge">
@@ -139,10 +139,10 @@
             <p>Welcome to my guitar website! Please click along to find out more about guitars.</p>
             <p>Guitar is a fun instrument to play!</p>
         </section>
-        <section id = "who">
+        <section id = "who" class="who">
             <h2>About</h2>
             <figure>
-                <img src = "images/stock2.jpg">
+                <img src = "images/stock2.jpg" alt ="guitar against wall">
                 <figcaption>Electric Guitar</figcaption>
             </figure>
             <p>The guitar is a stringed instrument, typically with 6 or 12 strings, that is played by strumming or plucking with the players hands.</p>
@@ -155,16 +155,16 @@
             </ul>
             <p>They are all fun to play!</p>
         </section>
-        <section id="when">
+        <section id="when" class = "when">
             <h2>History of Guitar</h2>
             <figure>
-                <img src="images/stockguitar.jpg" href ="Guitar standing up next to a plant">
+                <img src="images/stockguitar.jpg" alt ="Guitar standing up next to a plant">
                 <figcaption><em>Classical guitar</em></figcaption>
             </figure>
             <p>The guitar is thought to have been invented in Spain in the 12th century, although the original invention is lost to time.<br>
             Click <a href = "https://historycooperative.org/who-invented-the-guitar/">here</a> to find out more.</p>
         </section>
-        <section id ="where">
+        <section id ="where" class = "where">
             <h2>Where to Buy</h2>
             <figure>
                 <img src="images/GuitarCenterAura.jpg" alt="Me testing out guitars in guitar center">
@@ -178,7 +178,7 @@
                 </tr>
                 <tr>
                     <td><a href = "https://www.guitarcenter.com/">Guitar Center</a></td>
-                    <td>In-Person & Online</td>
+                    <td>In-Person [&] Online</td>
                 </tr>
                 <tr>
                     <td><a href="https://www.ebay.com/">ebay</a></td>
@@ -190,7 +190,7 @@
                 </tr>
             </table>
         </section>
-        <section id = "how">
+        <section id = "how" class="how">
             <h2>How to play</h2>
             <figure>
                 <img src="images/Lounge Aura.JPG" alt="Me in the lounge yet again">
@@ -201,7 +201,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ug_DfEQI0H8?si=63MaYPKoXhO2lULj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </figure>
         </section>
-        <section id ="why">
+        <section id ="why" class="why">
             <h2>Why Guitar</h2>
             <figure>
                 <img src="images/stache lounge.jpg" alt="Jason in the bonus room">
@@ -218,7 +218,7 @@
                 <input type="submit" value="Submit"> 
             </form>
         </section>
-        <section id = "ai">
+        <section id = "ai" class="ai">
             <h2>Ai Prompts</h2>
             <p>I gave chat gpt two prompts for this page,</p>
             <ul>
@@ -255,23 +255,34 @@
                 document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
             </script>
             <script> //generated by chatgpt
+                
+            document.addEventListener('DOMContentLoaded', () => {
                 // Function to show a specific section and hide others
                 function showSection(sectionId) {
-                    // Hide all sections by targeting each ID directly
-                    document.getElementById('what').style.display = 'none';
-                    document.getElementById('who').style.display = 'none';
-                    document.getElementById('when').style.display = 'none';
-                    document.getElementById('where').style.display = 'none';
-                    document.getElementById('how').style.display = 'none';
-                    document.getElementById('why').style.display = 'none';
-                    document.getElementById('ai').style.display = 'none';
+                    // Hide all sections
+                    document.querySelectorAll('section').forEach((section) => {
+                        section.style.display = 'none';
+                    });
                     
                     // Show the selected section
-                    document.getElementById(sectionId).style.display = 'block';
+                    const selectedSection = document.getElementById(sectionId);
+                    if (selectedSection) {
+                        selectedSection.style.display = 'block';
+                    }
                 }
-        
+
+                // Add event listeners to each navigation link
+                document.querySelectorAll('nav a').forEach((link) => {
+                    link.addEventListener('click', (event) => {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        const targetId = link.getAttribute('href').substring(1); // Get the section id from the href
+                        showSection(targetId); // Show the corresponding section
+                    });
+                });
+
                 // Show the first section by default
                 showSection('what');
+            });
                 //chargpt generation ends here
             </script>
         
