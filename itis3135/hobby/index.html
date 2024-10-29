@@ -229,7 +229,7 @@
         </section>
         <footer>
             <nav>
-                <a href = "../index.html">Home page</a> | 
+                <a href = "../index.html" id="home-link">Home page</a> | 
                 <a href = "https://github.com/j35on" target="_new">GitHub.com</a> | 
                 <a href = "https://j35on.github.io" target="_new"> Github.io</a> |
                 <a href="https://www.linkedin.com/in/jason-gianni/">LinkedIn</a> |
@@ -283,7 +283,13 @@
                 // Show the first section by default
                 showSection('what');
             });
+
+            document.getElementById('home-link').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = '../index.html'; // Manually navigate to parent index.html
+            });
                 //chargpt generation ends here
+
             </script>
         
         </footer>
