@@ -40,7 +40,7 @@ const submitfeeling = document.getElementById("feelingbtn");
 submitfeeling.onclick = function feelingmsg(){
     let nameu = document.getElementById("name").value;
     let feeling = document.getElementById("feeling").value;
-    if(nameu !=="" && feeling!==""){
+    if (nameu !=="" && feeling!==""){
         fname.innerHTML= `The ${companyname} welcomes you, ${nameu}!
 We're glad you are doing ${feeling}!`;
     }
@@ -51,43 +51,33 @@ const submitNum = document.getElementById("fnumbtn");
 const fnum = document.getElementById("fnum");
 submitNum.onclick = function fnummsg(){
     let number = Math.abs(Math.round(Number(document.getElementById("fnum").value)));
-    if(number === 0){
+    if (number === 0){
         polyout.innerHTML ="Not a polygon";
-    }
-    else if(number === 1){
+    
+    } else if (number === 1){
         polyout.innerHTML ="Monogon";
-    }
-    else if(number ===2){
+    } else if (number ===2){
         polyout.innerHTML ="bigon";
-    }
-    else if(number ===3){
+    } else if (number ===3){
         polyout.innerHTML ="triangle";
-    }
-    else if(number ===4){
+    } else if (number ===4){
         polyout.innerHTML ="quadrilateral";
-    }
-    else if(number === 5){
+    } else if (number === 5){
         polyout.innerHTML ="pentagon";
-    }
-    else if(number===6){
+    } else if (number===6){
         polyout.innerHTML ="hexagon";
-    }
-    else if(number ===7){
+    } else if (number ===7){
         polyout.innerHTML ="septagon";
-    }
-    else if(number ===8){
+    } else if (number ===8){
         polyout.innerHTML ="octagon";
-    }
-    else if(number ===9){
+    } else if (number ===9){
         polyout.innerHTML ="nonagon";
-    }
-    else if(number ===10){
-        polyout.innerHTML ="decagon"
-    }
-    else{
+    } else if (number ===10){
+        polyout.innerHTML ="decagon";
+    } else {
         polyout.innerHTML ="Out of range";
     }
-}
+};
 
 const pizzasize = document.getElementById("pizzasize");
 const quantity = document.getElementById("quantity");
@@ -97,7 +87,7 @@ const calculatetotalbtn = document.getElementById("calculatetotal");
 calculatetotalbtn.onclick = function calctotal(){
     let ordersum = parseInt(pizzasize.value) * parseInt(quantity.value);
     ordertotal.innerHTML = `Your total is $${ordersum}`;
-}
+};
 
 const toppingbtn = document.getElementById("toppingbtn");
 const toppingrslt = document.getElementById("toppingresult");
@@ -105,10 +95,10 @@ toppingbtn.onclick = function randomTopping(){
     const toppings = ["Mushrooms","Sausage","Pepperoni","Peppers","Ham","Pineapple","Giraffe Meat"];
     const randomnum = Math.floor(Math.random()*7);
     toppingrslt.innerHTML= toppings[randomnum];
-}
+};
 
 const giraffebtn = document.getElementById("giraffebtn");
-const giraffeheight = document.getElementById("giraffeheight")
+const giraffeheight = document.getElementById("giraffeheight");
 
 let heightvalue = 0;
 giraffeheight.innerHTML = `Giraffe Height: ${heightvalue}ft`;
@@ -116,4 +106,25 @@ giraffebtn.onclick = function increaseHeight(){
     heightvalue+=4;
     giraffeheight.innerHTML = `Giraffe Height: ${heightvalue}ft`;
 
-}
+};
+
+const discountcode = document.getElementById("discount");
+const newtotal = document.getElementById("newtotaltxt");
+const discountbtn = document.getElementById("discountbtn");
+
+discountbtn.onclick = function calculateDiscount(){
+    if (discountcode.value === "5OFF") {
+        newtotal.innerHTML = "Discount applied!";
+    } else {
+        newtotal.innerHTML = "Invalid code.";
+    }
+};
+
+
+
+{/* <h2>Enter Discount Code</h2>
+        <label for="discount">Discount code:</label>
+        <input id="discount" name="discount" placeholder="i.e. 20OFFSTUDENT">
+        <h3 id="newtotaltxt"></h3> 
+        <button id="discountbtn" type="button">Enter</button>
+        */}
