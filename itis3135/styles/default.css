@@ -59,6 +59,9 @@ h3 > a, header > nav > a{
     display: inline-block; /* Ensures the padding and borders behave correctly */
     margin-bottom: 5px;
 }
+footer > nav > a:visited{
+    color:#5A3C68
+}
 ol{
     padding-left:30%;
     justify-content: center;

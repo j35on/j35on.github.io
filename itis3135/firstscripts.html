@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Jason Gianni || Jumping Giraffe || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id ="current-date"></h3>
+        <label for ="name">What is your name?</label>
+        <input id="name" name="name"><br>
+        <label for ="feeling">How are you feeling?</label>
+        <input id ="feeling" name="feeling"><br>
+        <br>
+        <button id="feelingbtn" type="submit">Submit</button>
+        <h3 id="feeling-name"></h3>
+        
+        <label for="fnum">Pick a number 0-10</label> 
+        <input id="fnum" name="fnum" type="number">
+        <br>
+        <button id="fnumbtn" type="submit">Submit</button>
+        <h3 id ="polyresult"></h3>
+
+        <h2>Calculate Order Total</h2>
+        <label for="pizzasize">Select size</label>
+        <select id ="pizzasize" name="pizzasize">
+            <option value="5">small</option>
+            <option value="8">medium</option>
+            <option value="10">large</option>
+            <option value="11">x-large</option>
+        </select><br>
+        <label for="quantity">How many pies?</label>
+        <input id="quantity" name="quantity" type="number" min="1" max="99">
+        <br>
+        <button id = "calculatetotal" type="submit">Calculate Order</button>
+        <h3 id="ordertotal"></h3>
+
+        <h2>Pick a random topping</h2>
+        <button id="toppingbtn" type ="button">Generate Topping</button>
+        <h3 id="toppingresult"></h3>
+        
+        <h2>Add Height</h2>
+        <button id ="giraffebtn" type="button">Increase Height</button>
+        <h3 id="giraffeheight"></h3>
+
+        <h2>Enter Discount Code</h2>
+        <label for="discount">Discount code:</label>
+        <input id="discount" name="discount" placeholder="i.e. 20OFFSTUDENT">
+        <button id="discountbtn" type="button">Enter</button>
+        <h3 id="newtotaltxt"></h3>
+        <p><em>Enter "5OFF" for testing</em></p>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+</html>
