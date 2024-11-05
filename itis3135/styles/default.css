@@ -60,7 +60,10 @@ h3 > a, header > nav > a{
     margin-bottom: 5px;
 }
 footer > nav > a:visited{
-    color:#5A3C68
+    color:#5A3C68;
+}
+footer > nav > a:visited:hover{
+    color:var(--hover-color);
 }
 ol{
     padding-left:30%;
