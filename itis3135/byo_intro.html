@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Jason Gianni || Jumping Giraffe || BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>BYO Introduction</h2>
+        
+        <form id="introform">
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <label for ="name">Name: </label>
+            <input id="name" name="name" type="text" required><br>
+
+            <label for="mascot">Mascot: </label>
+            <input id="mascot" name="mascot" type="text" required><br>
+
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg" required><br>
+
+            <label for="image-caption">Image Caption: </label>
+            <input id="image-caption" name="image-caption" required type="text"><br>
+
+            <label for="personal-background">Personal Background: </label>
+            <input id="personal-background" name="personal-background" required type="text"><br>
+
+            <label for="professional-background">Professional Background: </label>
+            <input id="professional-background" name="professional-background" required type="text"><br>
+
+            <label for="academic-background">Academic Background: </label>
+            <input id="academic-background" name="academic-background" required type="text"><br>
+
+            <label for="web-background">Background in Web Development: </label>
+            <input id="web-background" name="web-background" required type="text"><br>
+
+            <label for="computer-platform">Primary Computer Platform: </label>
+            <input id="computer-platform" name="computer-platform" required type="text"><br>
+
+            <label for="course-section">Courses:</label>
+            <div id="course-section">
+              <button type="button">Add Course</button>
+            </div><br>
+
+            <label for="funny">Funny Thing: </label>
+            <input id="funny" name="funny" type="text"><br>
+
+            <label for="anything">Anything else? </label>
+            <input id="anything" name="anything" type="text"><br>
+
+            <label>
+                <input type="checkbox" id="agree" required>
+                I understand that this page is not password protected and will not put anything here that I don’t want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
