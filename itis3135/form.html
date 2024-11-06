@@ -13,56 +13,51 @@
 </head>
 <body>
     <div data-include="components/header.html"></div>
-    <h2>  Basic Information Form</h2>
     
-    <form>
-        <label for ="form-name">Name</label>
-        <input type="text" id="form-name" name ="form-name" placeholder="John Smith" required><br>
-        <label for ="form-email">Email</label>
-        <input type="email" id="form-email" name ="form-email" placeholder="test@place.com" required><br>
-        <label for ="form-phone">Phone</label>
-        <input type="tel" id="form-phone" name ="form-phone" placeholder="(xxx) xxx-xxxx" required size="10"><br>
-        <fieldset>
-        <legend>What kind of pizza do you like?</legend>
-        <label for="check-one">Sicilian</label>
-        <input type ="checkbox" id = "check-one" name="check-one">
-
-        <label for="check-two">Grandmas</label>
-        <input type ="checkbox" id = "check-two" name="check-two">
-
-        <label for="check-three">Neapolitan</label>
-        <input type ="checkbox" id = "check-three" name="check-three">
-
-        <label for="check-four">Chicago</label>
-        <input type ="checkbox" id = "check-four" name="check-four"><br>
-        </fieldset>
-        <fieldset>
-        <legend>Are you Italian?</legend>
-        <label for ="radio1">Yes</label>
-        <input type="radio" name="radio1" id="radio1">
-        <label for ="radio2">No</label>
-        <input type ="radio" name="radio1" id="radio2" checked><br>
-        </fieldset>
-
-        <label for = "drop">Method of Contact</label>
-        <select name="drop" id="drop" required>
-            <option value="email">Email</option>
-            <option value = "phone">Phone</option>
-            <option value ="both">Both</option>
-        </select><br>
-        
-        <input type="submit" value="Submit">
-        <input type="reset">
     
-
-
-
-        
-    </form>
-
     <main>
-        
-
+        <h2>Basic Information Form</h2>
+        <em>We steal all your data</em>
+        <form>
+            <label for ="form-name">Name</label>
+            <input type="text" id="form-name" name ="form-name" placeholder="John Smith" required><br>
+            <label for ="form-email">Email</label>
+            <input type="email" id="form-email" name ="form-email" placeholder="test@place.com" required><br>
+            <label for ="form-phone">Phone</label>
+            <input type="tel" id="form-phone" name ="form-phone" placeholder="(xxx) xxx-xxxx" required size="10"><br>
+            <fieldset>
+            <legend>What kind of pizza do you like?</legend>
+            <label for="check-one">Sicilian</label>
+            <input type ="checkbox" id = "check-one" name="check-one">
+    
+            <label for="check-two">Grandmas</label>
+            <input type ="checkbox" id = "check-two" name="check-two">
+    
+            <label for="check-three">Neapolitan</label>
+            <input type ="checkbox" id = "check-three" name="check-three">
+    
+            <label for="check-four">Chicago</label>
+            <input type ="checkbox" id = "check-four" name="check-four"><br>
+            </fieldset>
+            <fieldset>
+            <legend>Are you Italian?</legend>
+            <label for ="radio1">Yes</label>
+            <input type="radio" name="radio1" id="radio1">
+            <label for ="radio2">No</label>
+            <input type ="radio" name="radio1" id="radio2" checked><br>
+            </fieldset>
+    
+            <label for = "drop">Method of Contact</label>
+            <select name="drop" id="drop" required>
+                <option value="email">Email</option>
+                <option value = "phone">Phone</option>
+                <option value ="both">Both</option>
+            </select><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset">
+                   
+        </form>
         
     </main>
     <div data-include="components/footer.html"></div>
