@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>UNCC Catholic Campus Ministry</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Welcome Back</h2>
+    <p>Please log in to access your account.</p>
+
+    <form action="https://example.com/login-handler" method="post" class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+        <button type="submit" class="btn">Login</button>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+    </form>
+</main>
+
+<footer>
+    Designed by <a href="jgdesigns.co/">JG Designs</a> &copy; 2024, Certified in <em><a href = "https://www.freecodecamp.org/certification/j35/responsive-web-design">Responsive Web Design</a></em>, Certified in <em><a href="https://www.freecodecamp.org/certification/j35/javascript-algorithms-and-data-structures-v8">JS</a></em>.
+    <section>
+        <a href="https://validator.w3.org/check?uri=referer" id = "validation-link-html">
+            <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation-link-css">
+            <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+        </section>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+</footer>
+
+</body>
+</html>
+
+
+<script src="../../scripts/include.js"></script>
