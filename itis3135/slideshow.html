@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Gianni || Jumping Giraffe || template</title>
+    <link rel="stylesheet" href="styles/default.css">
+    
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="menu-header" data-include="components/header.html"></header>
+    
+    <main>
+        <h2>Slideshow</h2>
+
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img class="slide" src="images/jellybean.jpeg" alt="Jellybean">
+                <img class="slide" src="images/andorra.jpg" alt="Andorra">
+                <img class="slide" src="images/slinky.jpg" alt="Slinky">
+                <img class="slide" src="images/ice.jpg" alt="Ice" >
+                <img class="slide" src="images/egg.jpg" alt="Egg" >
+                <img class="slide" src="images/necklace.jpg" alt="Necklace" >
+                <img class="slide" src="images/hair.jpg" alt="Hair" >
+                <img class="slide" src="images/oak.jpg" alt="Oak" >
+                <img class="slide" src="images/oak.jpg" alt="Oak" >
+                <img class="slide" src="images/oak.jpg" alt="Oak" >
+                <img class="slide" src="images/oak.jpg" alt="Oak" >
+            </div>
+
+            <!-- Caption -->
+            <div id="caption"></div>
+        </div>
+
+        <!-- Image Gallery Section -->
+        <div class="image-gallery">
+            <ul>
+                <li><img src="images/jellybean.jpeg" alt="Jellybean"><p>J</p></li>
+                <li><img src="images/andorra.jpg" alt="Andorra"><p>A</p></li>
+                <li><img src="images/slinky.jpg" alt="Slinky"><p>S</p></li>
+                <li><img src="images/ice.jpg" alt="Ice"><p>O</p></li>
+                <li><img src="images/egg.jpg" alt="Egg"><p>N</p></li>
+                <li><img src="images/necklace.jpg" alt="Necklace"><p>G</p></li>
+                <li><img src="images/hair.jpg" alt="Hair"><p>I</p></li>
+                <li><img src="images/oak.jpg" alt="Oak"><p>A</p></li>
+                <li><img src="images/oak.jpg" alt="Oak"><p>N</p></li>
+                <li><img src="images/oak.jpg" alt="Oak"><p>N</p></li>
+                <li><img src="images/oak.jpg" alt="Oak"><p>I</p></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer id="menu-footer" data-include="components/footer.html"></footer>
+
+    <script src="scripts/load-with-json.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let currentIndex = 0;
+            const slides = $('.slide');
+            const totalSlides = slides.length;
+
+            // Function to show the current slide
+            function showSlide(index) {
+                slides.hide();
+                $(slides[index]).show();
+                $('#caption').text($(slides[index]).data('caption'));
+            }
+
+            // Show the first slide initially
+            showSlide(currentIndex);
+
+            // Image gallery click event
+            $('.image-gallery img').click(function() {
+                const clickedIndex = $(this).parent().index();
+                currentIndex = clickedIndex;
+                showSlide(currentIndex);
+            });
+
+        });
+    </script>
+</body>
+</html>

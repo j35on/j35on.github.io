@@ -165,4 +165,48 @@ input[type="submit"]:hover,input[type="reset"]:hover{
     }
 }
 
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    display: block;
+}
+
+#caption {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.image-gallery ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
 /* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
