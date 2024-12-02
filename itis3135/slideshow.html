@@ -17,17 +17,17 @@
         <!-- Slideshow Section -->
         <div class="slideshow-container">
             <div class="slideshow">
-                <img class="slide" src="images/jellybean.jpeg" alt="Jellybean">
-                <img class="slide" src="images/andorra.jpg" alt="Andorra">
-                <img class="slide" src="images/slinky.jpg" alt="Slinky">
-                <img class="slide" src="images/ice.jpg" alt="Ice" >
-                <img class="slide" src="images/egg.jpg" alt="Egg" >
-                <img class="slide" src="images/necklace.jpg" alt="Necklace" >
-                <img class="slide" src="images/hair.jpg" alt="Hair" >
-                <img class="slide" src="images/oak.jpg" alt="Oak" >
-                <img class="slide" src="images/oak.jpg" alt="Oak" >
-                <img class="slide" src="images/oak.jpg" alt="Oak" >
-                <img class="slide" src="images/oak.jpg" alt="Oak" >
+                <img class="slide" src="images/jellybean.jpeg" alt="Jellybean" data-caption="Jellybean">
+                <img class="slide" src="images/andorra.jpg" alt="Andorra" data-caption="Andorra">
+                <img class="slide" src="images/slinky.jpg" alt="Slinky" data-caption="Slinky">
+                <img class="slide" src="images/oreo.jpg" alt="Oreo" data-caption="Oreo">
+                <img class="slide" src="images/november.jpg" alt="November" data-caption="November">
+                <img class="slide" src="images/guy.jpg" alt="Guy" data-caption="Guy">
+                <img class="slide" src="images/indigo.jpg" alt="Indigo" data-caption="Indigo">
+                <img class="slide" src="images/amp.jpg" alt="Amp" data-caption="Amp">
+                <img class="slide" src="images/noodle.jpg" alt="Noodle" data-caption="Noodle">
+                <img class="slide" src="images/necklace.jpg" alt="Necklace" data-caption="Necklace">
+                <img class="slide" src="images/illinois.jpg" alt="Illinois" data-caption="Illinois">
             </div>
 
             <!-- Caption -->
@@ -40,14 +40,14 @@
                 <li><img src="images/jellybean.jpeg" alt="Jellybean"><p>J</p></li>
                 <li><img src="images/andorra.jpg" alt="Andorra"><p>A</p></li>
                 <li><img src="images/slinky.jpg" alt="Slinky"><p>S</p></li>
-                <li><img src="images/ice.jpg" alt="Ice"><p>O</p></li>
-                <li><img src="images/egg.jpg" alt="Egg"><p>N</p></li>
-                <li><img src="images/necklace.jpg" alt="Necklace"><p>G</p></li>
-                <li><img src="images/hair.jpg" alt="Hair"><p>I</p></li>
-                <li><img src="images/oak.jpg" alt="Oak"><p>A</p></li>
-                <li><img src="images/oak.jpg" alt="Oak"><p>N</p></li>
-                <li><img src="images/oak.jpg" alt="Oak"><p>N</p></li>
-                <li><img src="images/oak.jpg" alt="Oak"><p>I</p></li>
+                <li><img src="images/oreo.jpg" alt="Oreo"><p>O</p></li>
+                <li><img src="images/november.jpg" alt="November"><p>N</p></li>
+                <li><img src="images/guy.jpg" alt="Guy"><p>G</p></li>
+                <li><img src="images/indigo.jpg" alt="Indigo"><p>I</p></li>
+                <li><img src="images/amp.jpg" alt="Amp"><p>A</p></li>
+                <li><img src="images/noodle.jpg" alt="Noodle"><p>N</p></li>
+                <li><img src="images/necklace.jpg" alt="Necklace"><p>N</p></li>
+                <li><img src="images/illinois.jpg" alt="Illinois"><p>I</p></li>
             </ul>
         </div>
 
@@ -57,30 +57,6 @@
 
     <script src="scripts/load-with-json.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            let currentIndex = 0;
-            const slides = $('.slide');
-            const totalSlides = slides.length;
-
-            // Function to show the current slide
-            function showSlide(index) {
-                slides.hide();
-                $(slides[index]).show();
-                $('#caption').text($(slides[index]).data('caption'));
-            }
-
-            // Show the first slide initially
-            showSlide(currentIndex);
-
-            // Image gallery click event
-            $('.image-gallery img').click(function() {
-                const clickedIndex = $(this).parent().index();
-                currentIndex = clickedIndex;
-                showSlide(currentIndex);
-            });
-
-        });
-    </script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>

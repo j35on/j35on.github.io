@@ -170,26 +170,42 @@ input[type="submit"]:hover,input[type="reset"]:hover{
     width: 80%;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack the image and caption vertically */
+    align-items: center; /* Center the content horizontally */
 }
 
 .slideshow {
     display: flex;
-    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 .slide {
-    width: 100%;
+    display: none; /* Hide all slides initially */
+    text-align: center;
+}
+
+.active {
+    display: block; /* Show only the active slide */
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 500px;
     display: block;
+    margin: auto;
 }
 
 #caption {
-    text-align: center;
-    padding: 10px;
+    margin-top: 10px;
     font-size: 1.2em;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; 
 }
-
 .image-gallery ul {
     display: flex;
     justify-content: center;
@@ -203,10 +219,22 @@ input[type="submit"]:hover,input[type="reset"]:hover{
 }
 
 .image-gallery img {
-    width: 150px;
-    height: 100px;
+    width: 50px;
+    height: 33px;
     object-fit: cover;
     cursor: pointer;
 }
+
+.image-gallery ul li p {
+    
+    margin: 5px 0; /* Space around the letter */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+.image-gallery ul li .highlight {
+    font-weight: bold; /* Bold font */
+    font-size: 1.5em; /* Larger font size */
+}
+
 
 /* https://coolors.co/d4d6b9-32213a-ef959c-294d4a-416165 */
