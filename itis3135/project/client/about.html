@@ -8,7 +8,7 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <div id="countdown"></div>
 <header>
     <div class="container">
         <h1>UNCC Catholic Campus Ministry</h1>
@@ -23,6 +23,7 @@
 </header>
 
 <main class="container">
+    
     <section>
         <h2>About Us</h2>
         <p>Catholic Campus Ministry is a fun-spirited group of young adults seeking to continue their faith journey in the college environment. Mass is held on Sundays at 5:00pm at St. Thomas Aquinas Catholic Church, just a few blocks from campus. CCM also meets each Wednesday night at 6:30pm in the Campus Ministry Center next to St. Thomas Aquinas.</p>
@@ -31,6 +32,29 @@
 <p>CCM also participates in events hosted by the Diocese of Charlotte such as the annual Eucharistic Congress and diocesan-wide retreats for college students. We are also active with the Knights of Columbus, assisting them with fundraisers and events.</p>
 
     </section>
+
+    <section class="slideshow-container">
+        <!-- Slides -->
+        <div class="myslides-fade">
+            <img src="../images/uncc_catholic__2024-11-23T231356.000Z_4.jpg" alt="Dancing">
+        </div>
+    
+        <div class="myslides-fade">
+            <img src="../images/uncc_catholic__2024-11-23T231356.000Z_5.jpg" alt="Alan!">
+        </div>
+    
+        <div class="myslides-fade">
+            <img src="../images/uncc_catholic__2024-11-23T231356.000Z_8.jpg" alt="Men Group">
+        </div>
+    
+        <!-- Navigation dots (optional) -->
+        <div id="dothold">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    
 </main>
 
 <footer>
@@ -43,7 +67,8 @@
         <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation-link-css">
             <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
         </a>
-        </section>
+    </section>
+    
         <script>
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
@@ -53,5 +78,8 @@
 </body>
 </html>
 
-
+<script src="../scripts/darkmode.js"></script>
 <script src="../../scripts/include.js"></script>
+<script src="../scripts/slideshow.js">
+</script>
+<script src="../scripts/countdown.js"></script>
