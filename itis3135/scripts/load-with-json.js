@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             menuContainer.appendChild(heading);
 
             const navContainer = document.createElement("nav");
+            const lastItemsContainer = document.createElement("div");
 
             // Process JSON data for header
             data.forEach((item, index) => {
@@ -17,13 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 menuItem.href = item.url;
 
                 // Add separator (||) except for the last item
-                navContainer.appendChild(menuItem);
-                if (index < data.length - 1) {
+                if (index < data.length - 3) {
+                    navContainer.appendChild(menuItem);
                     navContainer.appendChild(document.createTextNode(" || "));
+                } else {
+                    // For the last 3 items, add them to the new container
+                    lastItemsContainer.appendChild(menuItem);
+                    if (index < data.length - 1) {
+                        lastItemsContainer.appendChild(document.createTextNode(" || "));
+                    }
                 }
             });
 
+            // Append the navContainer and lastItemsContainer to the menuContainer
             menuContainer.appendChild(navContainer);
+            menuContainer.appendChild(lastItemsContainer);
         })
         .catch((error) => console.error("Error fetching header menu:", error));
 

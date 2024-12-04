@@ -15,5 +15,6 @@
     {"name": "Review One", "url": "review1.html"},
     {"name": "Review Two", "url": "review2.html"},
     {"name": "Crappy", "url": "stuff/ya $YAKdla.htm"},
-    {"name": "Hobby", "url": "hobby/index.html"}
+    {"name": "Hobby", "url": "hobby/index.html"},
+    {"name": "Client", "url": "project/client/index.html"}
 ]
