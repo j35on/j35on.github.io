@@ -5,9 +5,11 @@ function toggleDarkMode(isNightTime) {
     if (isNightTime) {
         elements.forEach((el) => el.classList.add('dark-mode'));
         forms.forEach((el) => el.classList.add('dark-mode'));
+        console.log(new Date().getHours())
     } else {
         elements.forEach((el) => el.classList.remove('dark-mode'));
         forms.forEach((el) => el.classList.remove('dark-mode'));
+        console.log(new Date().getHours())
     }
 }
 
